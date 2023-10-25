@@ -1,0 +1,100 @@
+.champion_grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(auto-fill, minmax(21rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+    -ms-grid-gap: 2.4rem;
+    grid-gap: 2.4rem;
+}
+.card-container {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    min-width: 22rem;
+    padding: 2.4rem 1.2rem 2.8rem;
+    border-radius: 6px;
+    background: var(--general-base-200);
+    border: 1px solid var(--general-base-100);
+    box-shadow: 0 2px 10px rgba(21, 11, 37, 0.500793);
+    -webkit-transition: all ease-out 0.1s;
+    transition: all ease-out 0.1s;
+    height: 100%;
+}
+
+.icon-container {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+}
+
+.avatar {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    filter: drop-shadow(rgba(0, 0, 0, 0.1) 0 0 0);
+    border: 4px solid var(--general-gold-200);
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 1.6rem;
+}
+
+.champion-name {
+    font: 500 2rem/2.8rem Roboto, sans-serif;
+    letter-spacing: 0.015rem;
+    color: var(--general-gold-200);
+    padding-bottom: 0.4rem;
+}
+
+.champion-title {
+    font: 400 1.4rem/2rem Roboto, sans-serif;
+    letter-spacing: 0.025rem;
+    color: var(--general-grey-200);
+    padding-bottom: 1.2rem;
+    max-width: 100%;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+}
+
+.rating-indicator {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1rem;
+    display: block;
+    border: 2px solid transparent;
+}
+
+.rating-text {
+    font: 400 1.4rem/2rem Roboto, sans-serif;
+    letter-spacing: 0.025rem;
+    color: #fff;
+    margin-left: 1.2rem;
+    text-transform: capitalize;
+}
+
+.role-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 12px;
+}
+
+.role-icon:last-child {
+    margin-bottom: 0;
+}
